@@ -1,0 +1,77 @@
+body {
+  background-attachment: fixed;
+  background-image: url("assets/images/background-1.svg"), linear-gradient(to top, rgba(15,12,18,0.749), rgba(15,12,18,0.749)), url("assets/images/backgroun.svg");
+  background-size: 512px, auto, cover;
+  background-position: center, 0% 0%, center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-color: #1A1721;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sub-total {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.description {
+  color: rgba(255,255,255,0.361);
+  font-size: 24px;
+  margin-top: -65px;
+  text-align: center;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links > ul > li > a {
+  border: 1px solid #fff;
+  display: flex;
+  padding: 14px;
+  border-radius: 18px;
+  transition: 300ms ease;
+  margin: 30px 20px;
+}
+
+.links > ul > li > a > svg {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+  transition: 300ms ease;
+}
+
+.links > ul > li > a:hover {
+  background: #f0e1cc;
+}
+
+.links > ul > li > a:hover > svg {
+  fill: #000;
+}
+
+@media (max-width: 520px) {
+  .description {
+    font-size: 20px;
+  }
+}
